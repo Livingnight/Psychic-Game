@@ -31,6 +31,7 @@ var game = {
             console.log(userGuess);
             game.chancesLeft = 10;
             this.computerGuess = undefined;
+            alert("You've won! You really are psychic!");
 
         }
         // GAME LOGIC FOR WRONG GUESS
@@ -47,15 +48,16 @@ var game = {
                 console.log(game.losses);
                 game.alreadyGuessed = [];
                 this.computerGuess = undefined;
+                alert("You used all you're guesses! You Lose!!")
             }
         }
 
         // HTML TO MAIN PAGE AFTER EVERY GUESS/LOSS/WIN
         var html =
-            "<p>Wins: " + game.wins + "</p>" +
-            "<p>Losses: " + game.losses + "</p>" +
-            "<p>Chances Left: " + game.chancesLeft + "</p>" +
-            "<p>Letters Guessed: " + game.alreadyGuessed + "</p>";
+            "<p class = 'winner'>Wins: " + "<span>" + game.wins+ "</span>" + "</p>" +
+            "<p class = 'loser'>Losses: " + "<span>" +game.losses + "</span>" + "</p>" +
+            "<p class = 'remainder'>Chances Left: " + "<span>" + game.chancesLeft + "</span>" + "</p>" +
+            "<p class = 'used'>Letters Guessed: " + "<span>" + game.alreadyGuessed + "</span>" + "</p>";
 
 
         document.querySelector("#psychic").innerHTML = html;

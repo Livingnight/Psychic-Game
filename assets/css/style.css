@@ -1,0 +1,39 @@
+body, html {
+    height: 100%;
+}
+body{
+    background: #000000 url("../images/i-asked-psychics-to-connect-with-my-non-existent-dead-sister-1433514380.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+p{
+    color: #ffffff;
+    font-size: 26px;
+    /*margin: 10%;*/
+}
+#psychic {
+    position: absolute;
+    bottom: 5%;
+    left: 40%;
+    padding: 5px;
+    /*margin-left: 40%;*/
+    /*margin-top: 35%;*/
+    /*width: 100%;*/
+    /*height: 100%;*/
+    border: 2px solid crimson;
+}
+.winner span {
+    color: #00FF00;
+}
+.loser span {
+    color: #ff0000;
+}
+.remainder span {
+    color: #0000ff;
+}
+.used span {
+    color: darkmagenta;
+}
